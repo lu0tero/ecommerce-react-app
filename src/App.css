@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgb(106, 106, 106);
+    background-color: var(--mainColor);
     font-family: 'Oswald', sans-serif;
 }
 
@@ -26,43 +26,5 @@ header {
     background-color: var(--mainColor);
 }
 
-.title {
-    font-weight: 600;
-}
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 100px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.list-container {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
-}
-
-.nav-item a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.contact-btn {
-    padding: 10px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-}
 

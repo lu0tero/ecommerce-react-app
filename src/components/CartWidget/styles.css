@@ -1,0 +1,11 @@
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart {
+    font-size: 20px;
+    color: black;
+}
