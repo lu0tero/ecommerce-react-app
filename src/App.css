@@ -9,6 +9,8 @@
 
 :root {
     --mainColor: rgb(249, 228, 189);
+    --secondColor: #e8394a;
+    --thirdColor: #31313c;
 }
 
 body {
@@ -26,5 +28,8 @@ header {
     background-color: var(--mainColor);
 }
 
+.title {
+    font-size: 25px;
+}
 
 
