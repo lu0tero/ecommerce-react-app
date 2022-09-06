@@ -1,9 +1,9 @@
 import './styles.css'
 
-const CartWidget = (props) => {
+const CartWidget = () => {
   return (
     <div className="cart-container">
-        <div className='cart-number'>{props.cartStock}</div>
+        <div className='cart-number'></div>
         <i class="fa-solid fa-cart-shopping cart"></i>
         <button className='contact-btn'><a>Contact</a></button>
     </div>

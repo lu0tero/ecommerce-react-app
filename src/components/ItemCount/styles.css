@@ -32,13 +32,3 @@
     flex-direction: row;
     background-color: var(--thirdColor);
 }
-
-.productadd-btn {
-    width: 100%;
-    border-radius: 10px;
-    border: none;
-}
-
-.productadd-btn:hover {
-    cursor: pointer;
-}
