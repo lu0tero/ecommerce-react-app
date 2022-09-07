@@ -19,7 +19,7 @@ function App() {
       </header>
       <ItemListContainer greeting={"Bienvenido"}></ItemListContainer>
 
-      <ItemCount/>
+      <ItemCount stock={10}/>
     </div>
 
   );

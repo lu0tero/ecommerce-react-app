@@ -1,8 +1,7 @@
 import './styles.css'
 import { useState } from 'react';
 
-const ItemCount = (props) => {
-  const stock = 10;
+const ItemCount = ({stock}) => {
   const [cartStock, setCartStock] = useState(0);
   const addItem = () => cartStock < stock ? setCartStock(cartStock + 1) : console.log('Se llego al limite'); 
   const subItem = () => cartStock > 0 ? setCartStock(cartStock - 1) : console.log('No se puede llegar a numero negativo'); 
