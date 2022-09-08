@@ -29,6 +29,20 @@ const vinyls = [
         id: '4',
         img: 'https://imgs.search.brave.com/d0QqeicASEbJOO8I8TPsa7I_YHI2a0bvjhaAG_r72VY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA4/ODEvNDU2OC9wcm9k/dWN0cy9UaGVCZWF0/bGVzLUFiYmV5Um9h/ZF8xLmpwZz92PTE2/MTQ4OTA1Njc'
     },
+    {
+        title: 'A Rush Of Blood To The Head',
+        artist: 'Coldplay',
+        price: '$4000',
+        id: '5',
+        img: 'https://imgs.search.brave.com/OsxcwkvetQQhO4V5gXlne5EeRK0371U9zQQFSuWDLAw/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAw/NzkvNjY1Mi8zNDQ0/L3Byb2R1Y3RzL0FS/VVNIT0ZCTE9PRFZJ/TllMLnBuZz92PTE2/MTk0NzExMTA'
+    },
+    {
+        title: 'Perfect Symmetry',
+        artist: 'Keane',
+        price: '$6200',
+        id: '6',
+        img: 'https://imgs.search.brave.com/VbKlsLO_jyy2PnMLi0xOfQo9PEk2aItei-mqKQfvf_0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZXJj/aGJhci5pbWdpeC5u/ZXQvcHJvZHVjdC92/aW55bGl6ZWQvdXBj/Lzc0LzYwMjU2NzE3/NzQwMS5qcGc_dz02/NDAmaD02NDAmcXVh/bGl0eT0yMCZhdXRv/PWNvbXByZXNzJTI1/MkNmb3JtYXQmZHBy/PTM'        
+    },
 
 ];
 

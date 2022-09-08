@@ -29,6 +29,15 @@
     text-decoration: none;
 }
 
+.nav-item:hover {
+    transition: ease-in 0.3s;  
+    transform: scale(1.1);
+}
+
+.nav-item a:hover {
+  color: var(--secondColor);
+}
+
 .contact-btn {
     padding: 10px;
     text-transform: uppercase;
@@ -36,4 +45,9 @@
     cursor: pointer;
     border-radius: 10px;
     background-color: rgb(230, 57, 57);
+}
+
+.contact-btn:hover {
+    background-color: var(--thirdColor);
+    color: var(--secondColor);
 }

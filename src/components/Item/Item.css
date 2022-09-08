@@ -13,6 +13,7 @@
     width: 220px;
     margin: 5px;
     border-radius: 5px;
+    background-color: white;
 }
 
 .vinyl-title {
@@ -24,6 +25,7 @@
 .vinyl-artist {
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .vinyl-price {
