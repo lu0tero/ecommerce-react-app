@@ -1,0 +1,37 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--thirdColor);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.vinyl-img {
+    width: 220px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.vinyl-title {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.vinyl-artist {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.vinyl-price {
+    letter-spacing: 1.5px;
+    color: var(--secondColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
