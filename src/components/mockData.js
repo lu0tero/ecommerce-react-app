@@ -12,7 +12,22 @@ const vinyls = [
         artist: 'Radiohead',
         price: '$13000',
         id: '2',
-        img: 'https://imgs.search.brave.com/349rR5msHEJUz3OcEdOVEGUElzCczAd_cSQ8ViPbPss/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNjQz/MzI2YjUtZmIyNi00/YThlLWJlMDMtOGZh/NjhlYzEwNWExXzEu/ODFhODEzNWI5YzEw/MDcxOGI5MmIyNWRj/YzNmOGI5ODIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY'
+        img: 'https://imgs.search.brave.com/349rR5msHEJUz3OcEdOVEGUElzCczAd_cSQ8ViPbPss/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNjQz/MzI2YjUtZmIyNi00/YThlLWJlMDMtOGZh/NjhlYzEwNWExXzEu/ODFhODEzNWI5YzEw/MDcxOGI5MmIyNWRj/YzNmOGI5ODIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY',
+        description: "OK Computer is Radiohead's third studio album. With OK Computer, the band made a deliberate attempt to distance themselves from the guitar-oriented, lyrically introspective style of their previous album The Bends (1995).",
+        tracks: [
+         '1- Airbag  ',
+         '2- Paranoid Android  ',
+         '3- Subterranean Homesick Alien  ',
+         '4- Exit Music (For a Film)  ',
+         '5- Let Down  ',
+         '6- Karma Police  ',
+         '7- Fitter Happier  ',
+         '8- Electioneering  ',
+         '9- Climbing Up the Walls  ',
+         '10- No Surprises  ',
+         '11- Lucky  ',
+         '12- The Tourist'
+        ]
     },
 
     {

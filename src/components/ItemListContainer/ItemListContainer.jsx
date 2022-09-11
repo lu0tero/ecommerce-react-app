@@ -2,9 +2,11 @@ import './ItemListContainer.css'
 import { useEffect, useState } from 'react';
 import vinyls from '../mockData';
 import ItemList from '../ItemList/ItemList';
+import loader from '../../../src/loader.gif'
 
 const ItemListContainer = () => {
 
+    const [loading, setLoading] = useState(true)
     const [productList, setProductList] = useState([])
 
 
@@ -13,6 +15,7 @@ const ItemListContainer = () => {
       .then((response) => {
         setProductList(response)
       })
+      .finally(() => (setLoading(false)))
     }, [])
     
 
@@ -23,7 +26,9 @@ const ItemListContainer = () => {
     })
 
     return (
+        
         <section className='itemlist-container'>
+            {loading ? <img className='loader' src={loader} /> : ''}
             <ItemList lista= {productList}/>
         </section>
     )

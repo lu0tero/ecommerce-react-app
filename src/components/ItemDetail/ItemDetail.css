@@ -1,0 +1,38 @@
+.detail-card {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondColor);
+    width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 40%;
+}
+
+
+.detail-info p, .tracklist {
+    font-weight: 300;
+    padding-top: 15px;
+}
+
+.detail-info h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail-info h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.detail-card img {
+    width: 350px;
+    border-radius: 10px;
+}
+
