@@ -1,7 +1,7 @@
-import vinyls from "../mockData";
+import vinyls from "../../components/mockData";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemDetail from "../../components/ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
 
@@ -9,13 +9,18 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([])
 
     useEffect(() => {
-      getItemDetail()
+      getItemDetail.then((response) => {
+        setDetail(response)
+      })
     }, [id])
     
+    
 
-    const getItemDetail = () => {
-      setDetail(vinyls.find(detail => detail.id === id))
-    }
+    const getItemDetail = new Promise ((resolve, reject) => {
+      setTimeout(() => {
+        resolve(vinyls.find(detail => detail.id === id))
+      })
+    })
 
   return (
     <div>

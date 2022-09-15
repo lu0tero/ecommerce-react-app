@@ -1,9 +1,9 @@
 
 .btn-container {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 20px 0px 0px 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .item-btn {
@@ -22,12 +22,14 @@
 
 .item-number {
     color: whitesmoke;
+    position: relative;
+    bottom: 7px;
 }
 
 .counter-container {
     display: flex;
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     flex-direction: row;
     background-color: var(--thirdColor);
-}
+} 

@@ -1,7 +1,7 @@
 import './ItemListContainer.css'
 import { useEffect, useState } from 'react';
-import vinyls from '../mockData';
-import ItemList from '../ItemList/ItemList';
+import vinyls from '../../components/mockData'
+import ItemList from '../../components/ItemList/ItemList';
 import loader from '../../../src/loader.gif'
 
 const ItemListContainer = () => {
