@@ -8,7 +8,6 @@ const Item = ({title, artist, price, img}) => {
       <h4 className='vinyl-title'>{title}</h4>
       <h5 className='vinyl-artist'>{artist}</h5>
       <p className='vinyl-price'>{price}</p>
-      <ItemCount stock= {10}/>
     </div>
   )
 }

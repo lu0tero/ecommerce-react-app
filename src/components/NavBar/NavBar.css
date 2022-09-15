@@ -23,19 +23,10 @@
     gap: 30px;
 }
 
-.nav-item a {
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
 .nav-item:hover {
     transition: ease-in 0.3s;  
     transform: scale(1.1);
-}
-
-.nav-item a:hover {
-  color: var(--secondColor);
 }
 
 .contact-btn {
@@ -50,4 +41,9 @@
 .contact-btn:hover {
     background-color: var(--thirdColor);
     color: var(--secondColor);
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
