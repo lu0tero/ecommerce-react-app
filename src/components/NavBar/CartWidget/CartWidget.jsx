@@ -7,7 +7,7 @@ const CartWidget = () => {
         <div className='cart-number'></div>
         <i className="fa-solid fa-cart-shopping cart"></i>
         <Link className='link' to='/contact'>
-          <button className='contact-btn'><a>Contact</a></button>
+          <button className='contact-btn'>Contact</button>
         </Link>
     </div>
   )
