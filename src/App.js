@@ -28,7 +28,7 @@ function App() {
           <Route path='contact' element={<h1>Contact</h1>}/>
           <Route path='about-us' element={<h1>About Us</h1>}/>
           <Route path='details/:id' element={<ItemDetailContainer/>}/>
-          <Route path='category/:genre' element={<ItemListContainer/>}/>
+          <Route path='category/:genre' element={<ItemListContainer/>}/>n
         </Routes>
       </div>
     </BrowserRouter>

@@ -147,6 +147,56 @@ const vinyls = [
         ]
     },
 
+    {
+        title: 'Greatest Hits',
+        artist: 'Foo Fighters',
+        price: '$9990',
+        id: '7',
+        img: 'https://http2.mlstatic.com/D_NQ_NP_697637-MLA27221374752_042018-W.jpg',
+        description: "Greatest Hits is a greatest hits album released by American rock band the Foo Fighters on November 3, 2009.",
+        genre: 'Rock',
+        tracks: [
+            "1- All My Life  ",
+            "2- Best of You  ",
+            "3- Everlong  ",
+            "4- The Pretender  ",
+            "5- My Hero  ",
+            "6- Learn to Fly  ",
+            "7- Times Like These  ",
+            "8- Monkey Wrench  ",
+            "9- Big Me  ",
+            "10- Breakout  ",
+            "11- Long Road to Ruin  ",
+            "12- This Is a Call  ",
+            "13- Skin and Bones  ",
+            "14- Wheels  ",
+            "15- Word Forward  ",
+            "16- Everlong (Acoustic version)  "
+        ]
+    },
+
+    {
+        title: 'Future Nostalgia',
+        artist: 'Dua Lipa',
+        price: '$5300',
+        id: '9',
+        img: 'https://cdn.shopify.com/s/files/1/0572/2400/3783/products/DuaLipa-FutureNostalgia_Vinilo.jpg?v=1650301434',
+        description: `Future Nostalgia is the second studio album by English singer Dua Lipa, released on 27 March 2020 by Warner Records. Lipa enlisted writers and producers such as Jeff Bhasker, Ian Kirkpatrick, Stuart Price, the Monsters & Strangerz, and Koz in order to create a "nostalgic" pop and disco record with influences from dance-pop and electronic music, inspired by the music that Lipa enjoyed during her childhood.`,
+        genre: 'Pop',
+        tracks: [
+            "1- Future Nostalgia  ",
+            "2- Don't Start Now  ",
+            "3- Cool  ",
+            "4- Physical  ",
+            "5- Levitating  ",
+            "6- Pretty Please  ",
+            "7- Hallucinate  ",
+            "8- Love Again  ",
+            "9- Break My Heart  ",
+            "10- Good in Bed  ",
+            "11- Boys Will Be Boys  "
+        ]
+    }
 ];
 
 export default vinyls;

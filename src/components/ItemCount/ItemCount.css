@@ -1,35 +1,31 @@
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
 .item-btn {
-    color: var(--secondColor);
-    background-color: var(--thirdColor);
     border: none;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    padding: 5px;
+    font-size: 10px;
 }
-
 
 .item-btn:hover {
     cursor: pointer;
 }
 
-.item-number {
-    color: whitesmoke;
-    position: relative;
-    bottom: 7px;
-}
-
 .counter-container {
     display: flex;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.itemcount-container {
+    background-color: var(--secondColor);
     border-radius: 10px;
-    flex-direction: row;
-    background-color: var(--thirdColor);
-} 
+    width: 25%;
+}
+
+.item-number {
+    color: whitesmoke;
+}
