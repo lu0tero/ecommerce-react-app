@@ -1,22 +1,8 @@
 .banner-container {
-    background-color: var(--thirdColor);
     display: flex;
+    justify-content: center;
+    background-color: #749898;
+    width: 100%;
 }
 
-img {
-    width: 35%;
-}
 
-.banner-title {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 50px;
-    font-size: 40px;
-    color: var(--secondColor);
-    text-shadow: 1px 1px 1px black;
-}
-
-span {
-    color: rgb(255, 200, 0);
-}

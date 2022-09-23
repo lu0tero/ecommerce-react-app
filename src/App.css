@@ -8,9 +8,12 @@
 }
 
 :root {
-    --mainColor: rgb(249, 228, 189);
-    --secondColor: #e8394a;
-    --thirdColor: #31313c;
+    --mainColor: rgba(151, 202, 202, 0.774);
+    --yellow: #dcb138;
+    --blackGray: #31313c;
+    --oldGreen: #83a28b;
+    --orange: #ae5411;
+    
 }
 
 body {
@@ -25,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: var(--mainColor);
+    background-color: var(--thirdColor);
 }
 
 .title {

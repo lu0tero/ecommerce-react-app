@@ -4,6 +4,7 @@
 
 .detail-container {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 40px;
@@ -13,12 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--thirdColor);
+    background-color: var(--blackGray);
     border-radius: 10px;
     width: 70%;
     height: 600px;
     gap: 50px;
     color: whitesmoke;
+    position: relative;
 }
 
 .detail-info {
@@ -32,12 +34,14 @@
 
 .detail-info p, .tracklist {
     font-weight: 300;
+    font-size: 18px;
     padding-top: 15px;
 }
 
 .detail-info h2 {
     text-align: center;
     font-size: 30px;
+    color: var(--yellow);
 }
 
 .detail-info h3 {
@@ -46,7 +50,7 @@
 }
 
 .detail-card img {
-    width: 350px;
+    width: 410px;
     border-radius: 10px;
 }
 
@@ -60,14 +64,45 @@
 
 .cart-btn {
     border: none;
-    background-color: var(--secondColor);
+    background-color: var(--oldGreen);
     border-radius: 10px;
-    color: whitesmoke;
+    color: black;
     width: 100%;
     font-size: 15px;
     padding: 5px;
 }
 
 .cart-btn:hover {
+    cursor: pointer;
+}
+
+.clear-btn, .remove-btn {
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+    width: 20%;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.clear-btn, .remove-btn:hover {
+    cursor: pointer;
+}
+
+.back-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--oldGreen);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin: 5px;
+}
+
+.back-btn:hover {
     cursor: pointer;
 }

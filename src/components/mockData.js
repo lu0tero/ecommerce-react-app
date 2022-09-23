@@ -4,7 +4,7 @@ const vinyls = [
         artist: 'Billie Eilish',
         price: '$8500',
         id: '1',
-        img: 'https://imgs.search.brave.com/vcW9-keICY1BQuBzUWpZOs69tNxWyHiuPiqKwz5Djew/rs:fit:522:519:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzcxdVFNLWtIZWVM/Ll9TWDUyMl8uanBn',
+        img: 'https://i.ebayimg.com/images/g/91wAAOSwm5pgzDii/s-l500.png',
         description: "Happier Than Ever is the second studio album by American singer Billie Eilish. It was released on July 30, 2021. This album is characterized by sparse, jazz-influenced, electropop arrangements set to meditative tempos",
         genre: 'Pop',
         tracks: [
@@ -32,7 +32,7 @@ const vinyls = [
         artist: 'Radiohead',
         price: '$13000',
         id: '2',
-        img: 'https://imgs.search.brave.com/349rR5msHEJUz3OcEdOVEGUElzCczAd_cSQ8ViPbPss/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNjQz/MzI2YjUtZmIyNi00/YThlLWJlMDMtOGZh/NjhlYzEwNWExXzEu/ODFhODEzNWI5YzEw/MDcxOGI5MmIyNWRj/YzNmOGI5ODIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY',
+        img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/RADIOHEADOKCOMPUTER_2019-11-06_13-19-30_wkGSH5rS9a_2048x.png?v=1595512074',
         description: "OK Computer is Radiohead's third studio album. With OK Computer, the band made a deliberate attempt to distance themselves from the guitar-oriented, lyrically introspective style of their previous album The Bends (1995).",
         genre: 'Indie',
         tracks: [
@@ -56,7 +56,7 @@ const vinyls = [
         artist: 'Queen',
         price: '$10000',
         id: '3',
-        img: 'https://imgs.search.brave.com/yZgW3H1lVfvCrADvhORs0Ffnwp3PLtQaoX9zmygYS_I/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9wcm9k/dWN0LmhzdGF0aWMu/bmV0LzEwMDAzMDQ5/MjAvcHJvZHVjdC9h/aWdvbi12aW55bC1y/ZWNvcmRzLXN0b3Jl/LXF1ZWVuLWEtbmln/aHQtYXQtdGhlLW9w/ZXJhLWxwLXZpbnls/LWxwLWFsYnVtX2E3/ZjJmODZkNGU5MDQz/MzJiZDEwYWUzMDc5/ODQ1ZTQ2X21hc3Rl/ci5qcGc',
+        img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/QUEENANIGHTATTH_2048x.png?v=1600969569',
         description: 'A Night at the Opera is the fourth studio album by the British rock band Queen, released on 21 November 1975 by EMI Records. The songs incorporated a wide range of styles, such as ballads, music hall, dixieland, hard rock and progressive rock influences.',
         genre: 'Rock',
         tracks: [
@@ -79,7 +79,7 @@ const vinyls = [
         artist: 'The Beatles',
         price: '$11000',
         id: '4',
-        img: 'https://imgs.search.brave.com/d0QqeicASEbJOO8I8TPsa7I_YHI2a0bvjhaAG_r72VY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA4/ODEvNDU2OC9wcm9k/dWN0cy9UaGVCZWF0/bGVzLUFiYmV5Um9h/ZF8xLmpwZz92PTE2/MTQ4OTA1Njc',
+        img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/BEATLESTHEABBEYROAD5_2048x.png?v=1595512516',
         description: 'Abbey Road is the 11th studio album released by the English rock band the Beatles. This album incorporates genres such as blues, pop, and progressive rock and makes prominent use of the moog synthesizer and the Leslie speaker.',
         genre: 'Rock',
         tracks: [
@@ -107,7 +107,7 @@ const vinyls = [
         artist: 'Coldplay',
         price: '$4000',
         id: '5',
-        img: 'https://imgs.search.brave.com/OsxcwkvetQQhO4V5gXlne5EeRK0371U9zQQFSuWDLAw/rs:fit:1000:1000:1/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAw/NzkvNjY1Mi8zNDQ0/L3Byb2R1Y3RzL0FS/VVNIT0ZCTE9PRFZJ/TllMLnBuZz92PTE2/MTk0NzExMTA',
+        img: 'http://cdn.shopify.com/s/files/1/0079/6652/3444/products/ARUSHOFBLOODVINYL_1200x1200.png?v=1619471110',
         description: 'A Rush of Blood to the Head is the second studio album by British rock band Coldplay. It was released on 26 August 2002. The album topped the UK Albums Chart upon its first week of release in the United Kingdom, and became the eighth biggest-selling album of the 21st century in the UK.',
         genre: 'Indie',
         tracks: [
@@ -129,7 +129,7 @@ const vinyls = [
         artist: 'Keane',
         price: '$6200',
         id: '6',
-        img: 'https://imgs.search.brave.com/VbKlsLO_jyy2PnMLi0xOfQo9PEk2aItei-mqKQfvf_0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZXJj/aGJhci5pbWdpeC5u/ZXQvcHJvZHVjdC92/aW55bGl6ZWQvdXBj/Lzc0LzYwMjU2NzE3/NzQwMS5qcGc_dz02/NDAmaD02NDAmcXVh/bGl0eT0yMCZhdXRv/PWNvbXByZXNzJTI1/MkNmb3JtYXQmZHBy/PTM',        
+        img: 'https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.fN6f1csW/SharedImage-91405.png?t=984a72411679bdd84086',
         description: 'Perfect Symmetry is the third studio album by English rock band Keane, released on 13 October 2008 in the United Kingdom.',
         genre: 'Pop',
         tracks: [
@@ -152,7 +152,7 @@ const vinyls = [
         artist: 'Foo Fighters',
         price: '$9990',
         id: '7',
-        img: 'https://http2.mlstatic.com/D_NQ_NP_697637-MLA27221374752_042018-W.jpg',
+        img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/FOOFIGHTERGREATESTHI_2048x.png?v=1617428640',
         description: "Greatest Hits is a greatest hits album released by American rock band the Foo Fighters on November 3, 2009.",
         genre: 'Rock',
         tracks: [
@@ -180,7 +180,7 @@ const vinyls = [
         artist: 'Dua Lipa',
         price: '$5300',
         id: '9',
-        img: 'https://cdn.shopify.com/s/files/1/0572/2400/3783/products/DuaLipa-FutureNostalgia_Vinilo.jpg?v=1650301434',
+        img: 'https://cdn.shopify.com/s/files/1/0599/0662/1621/products/black_vinylcopy_530x@2x.png?v=1633401472',
         description: `Future Nostalgia is the second studio album by English singer Dua Lipa, released on 27 March 2020 by Warner Records. Lipa enlisted writers and producers such as Jeff Bhasker, Ian Kirkpatrick, Stuart Price, the Monsters & Strangerz, and Koz in order to create a "nostalgic" pop and disco record with influences from dance-pop and electronic music, inspired by the music that Lipa enjoyed during her childhood.`,
         genre: 'Pop',
         tracks: [

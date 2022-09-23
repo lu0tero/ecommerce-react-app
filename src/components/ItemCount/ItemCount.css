@@ -1,8 +1,8 @@
 .item-btn {
     border: none;
     border-radius: 50%;
-    background-color: var(--secondColor);
-    color: var(--thirdColor);
+    background-color: transparent;
+    color: var(--blackGray);
     padding: 5px;
     font-size: 10px;
 }
@@ -21,11 +21,11 @@
 
 
 .itemcount-container {
-    background-color: var(--secondColor);
+    background-color: var(--yellow);
     border-radius: 10px;
     width: 25%;
 }
 
 .item-number {
-    color: whitesmoke;
+    color: var(--blackGray);
 }

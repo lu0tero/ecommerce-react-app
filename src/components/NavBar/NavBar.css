@@ -1,4 +1,5 @@
 .title {
+    color: var(--blackGray);
     font-weight: 600;
 }
 
@@ -8,7 +9,7 @@
 }
 
 .logo {
-    width: 100px;
+    width: 70px;
 }
 
 .navbar {
@@ -26,7 +27,9 @@
 
 .nav-item:hover {
     transition: ease-in 0.3s;  
-    transform: scale(1.1);
+    transform: scale(1.02);
+    color: #c39823;
+    text-shadow: 0.5px 0.5px 1px  black;
 }
 
 .contact-btn {
@@ -34,17 +37,18 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    color: whitesmoke;
     border-radius: 10px;
-    background-color: rgb(230, 57, 57);
+    background-color: var(--yellow) ;
 }
 
 .contact-btn:hover {
-    background-color: var(--thirdColor);
-    color: var(--secondColor);
+    background-color: var(--blackGray);
+    color: var(--yellow);
 }
 
 .link {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: var(--blackGray);
 }

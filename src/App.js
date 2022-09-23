@@ -1,6 +1,7 @@
 import './App.css';
 import logo from './logo.gif'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CartProvider from './context/CartProvider';
 
 // Componentes
 import Home from './pages/Home/Home';
@@ -12,26 +13,29 @@ import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer
 function App() {
  
   return (
-    <BrowserRouter>
-      <div>
-        <header>
-          <div className='logo-container'>
-            <img className='logo' src={logo}/>
-            <h1 className='title'>Music Getaway</h1>
-          </div>
-          <NavBar />
-          <CartWidget/>
-        </header>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='vinyls' element={<ItemListContainer/>}/>
-          <Route path='contact' element={<h1>Contact</h1>}/>
-          <Route path='about-us' element={<h1>About Us</h1>}/>
-          <Route path='details/:id' element={<ItemDetailContainer/>}/>
-          <Route path='category/:genre' element={<ItemListContainer/>}/>n
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <div>
+          <header>
+            <div className='logo-container'>
+              <img className='logo' src={logo}/>
+              <h1 className='title'>Music Getaway</h1>
+            </div>
+            <NavBar />
+            <CartWidget/>
+          </header>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='vinyls' element={<ItemListContainer/>}/>
+            <Route path='contact' element={<h1>Contact</h1>}/>
+            <Route path='about-us' element={<h1>About Us</h1>}/>
+            <Route path='details/:id' element={<ItemDetailContainer/>}/>
+            <Route path='category/:genre' element={<ItemListContainer/>}/>
+            <Route path='cart' element={<h1>Cart</h1>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
