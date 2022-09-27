@@ -2,7 +2,7 @@ const vinyls = [
     {
         title: 'Happier Than Ever',
         artist: 'Billie Eilish',
-        price: '$8500',
+        price: '8500',
         id: '1',
         img: 'https://i.ebayimg.com/images/g/91wAAOSwm5pgzDii/s-l500.png',
         description: "Happier Than Ever is the second studio album by American singer Billie Eilish. It was released on July 30, 2021. This album is characterized by sparse, jazz-influenced, electropop arrangements set to meditative tempos",
@@ -30,7 +30,7 @@ const vinyls = [
     {
         title: 'Ok Computer',
         artist: 'Radiohead',
-        price: '$13000',
+        price: '13000',
         id: '2',
         img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/RADIOHEADOKCOMPUTER_2019-11-06_13-19-30_wkGSH5rS9a_2048x.png?v=1595512074',
         description: "OK Computer is Radiohead's third studio album. With OK Computer, the band made a deliberate attempt to distance themselves from the guitar-oriented, lyrically introspective style of their previous album The Bends (1995).",
@@ -54,7 +54,7 @@ const vinyls = [
     {
         title: 'A Night At The Opera',
         artist: 'Queen',
-        price: '$10000',
+        price: '10000',
         id: '3',
         img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/QUEENANIGHTATTH_2048x.png?v=1600969569',
         description: 'A Night at the Opera is the fourth studio album by the British rock band Queen, released on 21 November 1975 by EMI Records. The songs incorporated a wide range of styles, such as ballads, music hall, dixieland, hard rock and progressive rock influences.',
@@ -77,7 +77,7 @@ const vinyls = [
     {
         title: 'Abbey Road',
         artist: 'The Beatles',
-        price: '$11000',
+        price: '11000',
         id: '4',
         img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/BEATLESTHEABBEYROAD5_2048x.png?v=1595512516',
         description: 'Abbey Road is the 11th studio album released by the English rock band the Beatles. This album incorporates genres such as blues, pop, and progressive rock and makes prominent use of the moog synthesizer and the Leslie speaker.',
@@ -105,7 +105,7 @@ const vinyls = [
     {
         title: 'A Rush Of Blood To The Head',
         artist: 'Coldplay',
-        price: '$4000',
+        price: '4000',
         id: '5',
         img: 'http://cdn.shopify.com/s/files/1/0079/6652/3444/products/ARUSHOFBLOODVINYL_1200x1200.png?v=1619471110',
         description: 'A Rush of Blood to the Head is the second studio album by British rock band Coldplay. It was released on 26 August 2002. The album topped the UK Albums Chart upon its first week of release in the United Kingdom, and became the eighth biggest-selling album of the 21st century in the UK.',
@@ -127,7 +127,7 @@ const vinyls = [
     {
         title: 'Perfect Symmetry',
         artist: 'Keane',
-        price: '$6200',
+        price: '6200',
         id: '6',
         img: 'https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/imageFull/.fN6f1csW/SharedImage-91405.png?t=984a72411679bdd84086',
         description: 'Perfect Symmetry is the third studio album by English rock band Keane, released on 13 October 2008 in the United Kingdom.',
@@ -150,7 +150,7 @@ const vinyls = [
     {
         title: 'Greatest Hits',
         artist: 'Foo Fighters',
-        price: '$9990',
+        price: '9990',
         id: '7',
         img: 'https://cdn.shopify.com/s/files/1/0117/4483/7728/products/FOOFIGHTERGREATESTHI_2048x.png?v=1617428640',
         description: "Greatest Hits is a greatest hits album released by American rock band the Foo Fighters on November 3, 2009.",
@@ -178,7 +178,7 @@ const vinyls = [
     {
         title: 'Future Nostalgia',
         artist: 'Dua Lipa',
-        price: '$5300',
+        price: '5300',
         id: '9',
         img: 'https://cdn.shopify.com/s/files/1/0599/0662/1621/products/black_vinylcopy_530x@2x.png?v=1633401472',
         description: `Future Nostalgia is the second studio album by English singer Dua Lipa, released on 27 March 2020 by Warner Records. Lipa enlisted writers and producers such as Jeff Bhasker, Ian Kirkpatrick, Stuart Price, the Monsters & Strangerz, and Koz in order to create a "nostalgic" pop and disco record with influences from dance-pop and electronic music, inspired by the music that Lipa enjoyed during her childhood.`,

@@ -9,7 +9,7 @@ const Item = ({title, artist, price, img}) => {
       </div>
       <h4 className='vinyl-title'>{title}</h4>
       <h5 className='vinyl-artist'>{artist}</h5>
-      <p className='vinyl-price'>{price}</p>
+      <p className='vinyl-price'>${price}</p>
     </div>
   )
 }

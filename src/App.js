@@ -9,6 +9,7 @@ import NavBar from './components/NavBar/NavBar';
 import CartWidget from './components/NavBar/CartWidget/CartWidget';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
+import Cart from './components/Cart/Cart';
 
 function App() {
  
@@ -31,7 +32,7 @@ function App() {
             <Route path='about-us' element={<h1>About Us</h1>}/>
             <Route path='details/:id' element={<ItemDetailContainer/>}/>
             <Route path='category/:genre' element={<ItemListContainer/>}/>
-            <Route path='cart' element={<h1>Cart</h1>}/>
+            <Route path='cart' element={<Cart/>}/>
           </Routes>
         </div>
       </BrowserRouter>

@@ -37,7 +37,7 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    color: whitesmoke;
+    color: var(--blackGray);
     border-radius: 10px;
     background-color: var(--yellow) ;
 }
