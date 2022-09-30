@@ -29,7 +29,7 @@ const Cart = () => {
                     </Link>
                 </div> :
                 cart.map((item) => (
-                    <div key={item.id} className='product-cart'>
+                    <div key={item.title} className='product-cart'>
                         <div className='vinyl-img-cart'>
                             <img src={item.img} alt={item.title} className='vinyl-img' />
                         </div>

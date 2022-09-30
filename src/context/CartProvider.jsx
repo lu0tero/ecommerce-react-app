@@ -8,7 +8,7 @@ const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (item, quantity) => {
-        if (isInCart(item.id)) {
+        if (isInCart(item.title)) {
           Swal.fire({
             icon: 'error',
             title: 'This product is already in cart',
@@ -31,8 +31,8 @@ const CartProvider = ({children}) => {
         console.log('cart', [...cart, {...item, quantity}])
     };
 
-    const isInCart = (id) => {
-      return cart.some((item) => item.id === id);
+    const isInCart = (title) => {
+      return cart.some((item) => item.title === title);
   }
 
     const clear = () => {
@@ -41,8 +41,7 @@ const CartProvider = ({children}) => {
     }
 
     const removeItem = (itemId) => {
-      const deleteProduct = cart.filter((item) => item.id !== itemId);
-      setCart([...deleteProduct]);
+      setCart(cart.filter((item) => item.id !== itemId));
       console.log(cart)
     }
 

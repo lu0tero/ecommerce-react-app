@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import vinyls from '../../components/mockData'
 import ItemList from '../../components/ItemList/ItemList';
 import loader from '../../../src/loader.gif'
+import { collection, getFirestore, getDocs, query, where} from 'firebase/firestore'
 
 const ItemListContainer = () => {
 
@@ -12,22 +13,26 @@ const ItemListContainer = () => {
     const { genre } = useParams();
 
     useEffect(() => {
-      getVinyls
-      .then((response) => {
-        genre ? setProductList(response.filter((product) => product.genre === genre)) : setProductList(response)
-      })
-      .finally(() => (setLoading(false)))
+      getVinyls.then((response) => { setProductList(response)}).finally(() => (setLoading(false))) 
     }, [genre])
     
 
     const getVinyls = new Promise ((resolve, reject) => {
+        const db = getFirestore();
+        const queryBase = collection(db, 'items');
         setTimeout(() => {
-            resolve(vinyls)
-        }, 2000);
+            const querySnapshot = genre ? query(queryBase, where('genre', '==', genre) ) : queryBase
+            getDocs(querySnapshot)
+            .then((response) => {
+                const data = response.docs.map((product) => {
+                    return { id: product.id, ...product.data()}
+                });
+                resolve(data)
+            });
+        }, 1500)
     })
 
     return (
-        
         <section className='itemlist-container'>
             {loading ? <img className='loader' src={loader} /> : ''}
             <ItemList lista= {productList}/>

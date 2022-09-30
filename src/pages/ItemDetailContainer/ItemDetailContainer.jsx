@@ -1,26 +1,29 @@
-import vinyls from "../../components/mockData";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
+import vinyls from "../../components/mockData";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
+
 
 const ItemDetailContainer = () => {
 
-    const {id} = useParams()
-    const [detail, setDetail] = useState([])
+    const {id} = useParams();
+    const [detail, setDetail] = useState([]);
 
+    const db = getFirestore();
+    const queryDoc = doc(db, 'items', id);
+
+    
     useEffect(() => {
-      getItemDetail.then((response) => {
-        setDetail(response)
-      })
-    }, [id])
-    
-    
+      getItemDetail()
+    }, [id]);
 
-    const getItemDetail = new Promise ((resolve, reject) => {
-      setTimeout(() => {
-        resolve(vinyls.find(detail => detail.id === id))
+    const getItemDetail = () => {
+      getDoc(queryDoc).then((res) => {
+        setDetail(res.data())
       })
-    })
+      .catch((err) => console.log(err))
+    }
 
   return (
     <div>
