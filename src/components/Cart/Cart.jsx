@@ -2,6 +2,9 @@ import './Cart.css';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import {CartContext} from '../../context/cartContext';
+import { collection, addDoc, getFirestore } from 'firebase/firestore';
+import Swal from 'sweetalert2';
+import moment from 'moment/moment';
 
 
 const Cart = () => {
@@ -10,6 +13,41 @@ const Cart = () => {
     const clearCart = () => {
         clear()
       }
+
+       
+    const createOrder = () => {
+        const db = getFirestore();
+
+        const order = {
+            buyer: {
+                name: 'Mateo',
+                phone: '1125687242',
+                email: 'mateo@test.com'
+            },
+            item: cart, 
+            total: getTotalPrice,
+            date: moment().format()
+        };
+        const queryCollection = collection(db, 'orders');
+        addDoc(queryCollection, order)
+        .then(({id}) => {
+            console.log(id)
+            Swal.fire({
+                icon: 'success',
+                title: 'Product purchased successfully',
+                /* showConfirmButton: false,
+                timer: 1500 */
+              })
+        })
+        .catch(() => Swal.fire({
+            icon: 'error',
+            title: 'Something went wrong',
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 1500
+          }))
+    }
 
   return (
     <section className="productAdd-container">
@@ -44,7 +82,7 @@ const Cart = () => {
         </div>
         <div className='totalPrice-container'>
             <h3 className='total-price'>Total price: ${getTotalPrice}</h3>
-            <button className='purchase-btn'>Purchase</button>
+            <button onClick={createOrder} className='purchase-btn'>Purchase</button>
         </div>
     </section>
   )

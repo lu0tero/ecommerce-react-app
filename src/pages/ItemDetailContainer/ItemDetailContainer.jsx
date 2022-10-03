@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
-import vinyls from "../../components/mockData";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 
 
