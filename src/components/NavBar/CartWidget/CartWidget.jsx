@@ -11,9 +11,6 @@ const CartWidget = () => {
           <span>{sumQuantity}</span>
           <i className="fa-solid fa-cart-shopping cart"></i>
         </Link>
-        <Link className='link' to='/contact'>
-          <button className='contact-btn'>Contact</button>
-        </Link>
     </div>
   )
 }

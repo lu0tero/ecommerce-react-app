@@ -3,7 +3,7 @@
     flex-direction: column; 
     margin-top: 30px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px 10px;
 }
 
 .icon {
@@ -24,7 +24,7 @@
 }
 
 .cart-welcome {
-    font-size: 30px;
+    font-size: 25px;
     color: var(--blackGray);
     padding-bottom: 20px;
 }
@@ -150,3 +150,66 @@
 .purchase-btn:hover {
     cursor: pointer;
 }
+
+/* FORM */
+
+.formTitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-title {
+    color: var(--blackGray);
+    font-size: 25px;
+    background-color: var(--yellow);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(56, 56, 56);
+    margin: 15px;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.form-container img {
+    width: 450px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+    gap: 5px;
+    margin-left: 90px;
+}
+
+.input-container input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label {
+    background-color: var(--yellow);
+    border-radius: 5px;
+    width: 30%;
+    display: grid;
+    place-content: center;
+}
+
