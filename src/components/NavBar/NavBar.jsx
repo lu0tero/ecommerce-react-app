@@ -1,7 +1,11 @@
-import './NavBar.css';
+// React
 import {Link, NavLink} from 'react-router-dom';
 
+// CSS
+import './NavBar.css';
+
 const NavBar = () => {
+
     return (
         <nav className="navbar">
             <ul className="list-container">
@@ -12,15 +16,15 @@ const NavBar = () => {
                 <Link to='/vinyls' className='link'>
                     <li className="nav-item">Vinyls</li>
                 </Link>
-
+            
                 <NavLink to='/category/Pop' className='link'>
                     <li className="nav-item">Pop</li>
                 </NavLink>
-
+            
                 <NavLink to='/category/Rock' className='link'>
                     <li className="nav-item">Rock</li>
                 </NavLink>
-
+            
                 <NavLink to='/category/Indie' className='link'>
                     <li className="nav-item">Indie</li>
                 </NavLink>
@@ -34,4 +38,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;

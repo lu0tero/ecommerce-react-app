@@ -1,17 +1,22 @@
+// React
 import { Link } from 'react-router-dom';
 import { useState, useContext } from 'react';
-import './ItemDetail.css'
-import ItemCount from '../ItemCount/ItemCount';
 import { CartContext } from '../../context/cartContext';
+
+// Components
+import ItemCount from '../ItemCount/ItemCount';
+
+// CSS
+import './ItemDetail.css'
 
 const ItemDetail = ({detail}) => {
   const [count, setCount] = useState(1);
 
-  const {addToCart} = useContext(CartContext)
+  const {addToCart} = useContext(CartContext);
 
   function onAdd(detail) {
     addToCart(detail, count);
-  }
+  };
 
   return (
     <section className='detail-container'>

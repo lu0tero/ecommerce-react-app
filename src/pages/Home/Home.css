@@ -1,0 +1,23 @@
+.best-sellers {
+    margin-top: 35px;
+}
+
+.best-sellers h2 {
+    display: grid;
+    place-content: center;
+    font-size: 25px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(62, 133, 117, 0.638);
+}
+
+.mainVinyls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    padding: 0;
+}

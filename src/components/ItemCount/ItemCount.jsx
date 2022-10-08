@@ -1,3 +1,4 @@
+// CSS
 import './ItemCount.css'
 
 const ItemCount = ({stock, setCount, count}) => {

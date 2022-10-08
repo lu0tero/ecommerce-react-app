@@ -1,5 +1,5 @@
+// CSS
 import './Item.css'
-import ItemCount from '../ItemCount/ItemCount'
 
 const Item = ({title, artist, price, img}) => {
   return (

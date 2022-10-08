@@ -1,7 +1,3 @@
-.body {
-    background-color: blue;
-}
-
 .detail-container {
     display: flex;
     align-items: center;
@@ -28,7 +24,7 @@
     flex-direction: column;
     gap: 15px;
     padding: 10px;
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -91,4 +87,84 @@
 
 .back-btn:hover {
     cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    
+    .detail-card {
+        width: 90%;
+    }
+    
+    .detail-info {
+        width: 40%;
+    }
+    
+    .detail-card img {
+        width: 390px;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .detail-card {
+        width: 95%;
+    }
+
+    .detail-card img {
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .detail-card {
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .detail-info {
+        gap: 5px;
+        width: 90%;
+    }
+    
+    .detail-card img {
+        width: 300px;
+        border-radius: 10px;
+    }
+    
+    
+    .cart-btn {
+        border: none;
+        background-color: var(--oldGreen);
+        border-radius: 10px;
+        color: black;
+        width: 50%;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .cart-btn:hover {
+        cursor: pointer;
+    }
+    
+    .back-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--oldGreen);
+        border: none;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        color: whitesmoke;
+        margin: 5px;
+    }
+    
+    .back-btn:hover {
+        cursor: pointer;
+    }
 }

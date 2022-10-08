@@ -1,14 +1,21 @@
-import './Cart.css';
+// React
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {CartContext} from '../../context/cartContext';
 import { collection, addDoc, getFirestore } from 'firebase/firestore';
+
+// CSS
+import './Cart.css';
+
+// SweetAlert
 import Swal from 'sweetalert2';
+
+// Momentjs
 import moment from 'moment/moment';
 
 
 const Cart = () => {
-    const {cart, removeItem, clear, getTotalPrice} = useContext(CartContext)
+    const {cart, removeItem, clear, getTotalPrice} = useContext(CartContext);
     const [order, setOrder] = useState({
         buyer: {
             name: '',
@@ -18,11 +25,11 @@ const Cart = () => {
         items: cart,
         total: getTotalPrice,
         date: moment().format('DD/MM/YYYY')
-    })
+    });
 
     const clearCart = () => {
-        clear()
-      }
+        clear();
+      };
 
        
     const createOrder = () => {
@@ -30,11 +37,11 @@ const Cart = () => {
         const queryCollection = collection(db, 'orders');
         addDoc(queryCollection, order)
         .then(({id}) => {
-            console.log(id)
+            console.log(id);
             Swal.fire({
                 icon: 'success',
                 title: 'Product purchased successfully',
-              })
+              });
         })
         .catch(() => Swal.fire({
             icon: 'error',
@@ -43,19 +50,19 @@ const Cart = () => {
             position: 'top-end',
             showConfirmButton: false,
             timer: 1500
-          }))
-    }
+          }));
+    };
 
     const handleInputChange = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         setOrder({
             ...order,
             buyer: {
                 ...order.buyer,
                 [e.target.name]: e.target.value
             }
-        })
-    }
+        });
+    };
 
   return (
     <div>

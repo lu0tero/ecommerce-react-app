@@ -1,4 +1,4 @@
-.product-card {
+.product-card, .main-card {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -11,12 +11,12 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
 
-.vinyl-img-container {
+.vinyl-img-container, .main-img-container {
     width: 230px;
     height: 220px;
 }
 
-.vinyl-img {
+.vinyl-img, .main-img {
     margin: 5px;
     border-radius: 5px;
     width: 100%;
@@ -24,19 +24,19 @@
     object-fit: contain;
 }
 
-.vinyl-title {
+.vinyl-title, .main-title {
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 200;
 }
 
-.vinyl-artist {
+.vinyl-artist, .main-title {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.vinyl-price {
+.vinyl-price, .main-price {
     letter-spacing: 1.5px;
     color: black;
     display: flex;

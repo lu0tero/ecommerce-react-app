@@ -1,8 +1,12 @@
 .banner-container {
     display: flex;
     justify-content: center;
-    background-color: #749898;
+    align-items: center;
+    background-color: #040604;
     width: 100%;
 }
+
+
+
 
 

@@ -1,5 +1,10 @@
+// React
 import { Link } from "react-router-dom";
+
+// Components
 import Item from "../Item/Item";
+
+// CSS
 import './ItemList.css';
 
 const ItemList = ({lista}) => {
@@ -20,4 +25,4 @@ const ItemList = ({lista}) => {
   )
 }
 
-export default ItemList
+export default ItemList;

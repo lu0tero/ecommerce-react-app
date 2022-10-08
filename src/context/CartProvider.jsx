@@ -1,3 +1,4 @@
+// React
 import {  useState } from "react";
 import { CartContext} from './cartContext';
 
@@ -16,7 +17,7 @@ const CartProvider = ({children}) => {
             position: 'top-end',
             showConfirmButton: false,
             timer: 1500
-          })
+          });
         } else {
           setCart([...cart, {...item, quantity}])
           Swal.fire({
@@ -26,23 +27,23 @@ const CartProvider = ({children}) => {
             position: 'top-end',
             showConfirmButton: false,
             timer: 1500
-          })
-        }
+          });
+        };
         console.log('cart', [...cart, {...item, quantity}])
     };
 
     const isInCart = (title) => {
       return cart.some((item) => item.title === title);
-  }
+  };
 
     const clear = () => {
       setCart([]);
-      console.log(cart)
-    }
+      console.log(cart);
+    };
 
     const removeItem = (itemId) => {
       setCart(cart.filter((item) => item.id !== itemId));
-      console.log(cart)
+      console.log(cart);
     }
 
     const sumQuantity = cart.reduce((acc, item) => {
@@ -51,7 +52,7 @@ const CartProvider = ({children}) => {
 
     const getTotalPrice = cart.reduce((acc, item) => {
       return acc += parseInt(item.price) * item.quantity;
-    }, 0)
+    }, 0);
 
   return (
     <CartContext.Provider value={{cart, addToCart, clear, removeItem, sumQuantity, getTotalPrice}}>

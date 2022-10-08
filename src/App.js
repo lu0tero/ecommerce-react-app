@@ -3,9 +3,9 @@ import logo from './logo.gif'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartProvider from './context/CartProvider';
 
-// Componentes
-import Home from './pages/Home/Home';
+// Components
 import NavBar from './components/NavBar/NavBar';
+import Home from './pages/Home/Home';
 import CartWidget from './components/NavBar/CartWidget/CartWidget';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
@@ -20,7 +20,6 @@ function App() {
           <header>
             <div className='logo-container'>
               <img className='logo' src={logo}/>
-              <h1 className='title'>Music Getaway</h1>
             </div>
             <NavBar />
             <CartWidget/>
