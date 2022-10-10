@@ -16,6 +16,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 450px);
 }
 
 .main-card {
