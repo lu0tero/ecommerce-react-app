@@ -1,6 +1,9 @@
 // React
 import {Link, NavLink} from 'react-router-dom';
 
+// Components
+import Dropdown from '../Dropdown/Dropdown';
+
 // CSS
 import './NavBar.css';
 
@@ -10,27 +13,13 @@ const NavBar = () => {
         <nav className="navbar">
             <ul className="list-container">
                 <Link to='/' className='link'>
-                    <li className="nav-item">Home</li>
+                    <li className="nav-item home">Home</li>
                 </Link>
 
-                <Link to='/vinyls' className='link'>
-                    <li className="nav-item">Vinyls</li>
-                </Link>
-            
-                <NavLink to='/category/Pop' className='link'>
-                    <li className="nav-item">Pop</li>
-                </NavLink>
-            
-                <NavLink to='/category/Rock' className='link'>
-                    <li className="nav-item">Rock</li>
-                </NavLink>
-            
-                <NavLink to='/category/Indie' className='link'>
-                    <li className="nav-item">Indie</li>
-                </NavLink>
+                <Dropdown/>
 
                 <Link to='/about-us' className='link'>
-                    <li className="nav-item">About us</li>
+                    <li className="nav-item about-us">About us</li>
                 </Link>
             </ul>
            

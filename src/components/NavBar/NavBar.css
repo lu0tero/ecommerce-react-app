@@ -18,33 +18,30 @@
     align-items: center;
 }
 
+.home {
+    padding: 5px 10px;
+}
+
+.home:hover {
+    padding: 5px 10px;
+    background-color: #ffeba7;
+    color: var(--blackGray);
+}
+
+.about-us {
+    padding: 5px 10px;
+}
+
+.about-us:hover {
+    padding: 5px 10px;
+    background-color: #ffeba7;
+    color: var(--blackGray);
+}
+
 .list-container {
     display: flex;
     list-style-type: none;
     gap: 30px;
-}
-
-
-.nav-item:hover {
-    transition: ease-in 0.3s;  
-    transform: scale(1.02);
-    color: #c39823;
-    text-shadow: 0.5px 0.5px 1px  black;
-}
-
-.contact-btn {
-    padding: 10px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    color: var(--blackGray);
-    border-radius: 10px;
-    background-color: var(--yellow) ;
-}
-
-.contact-btn:hover {
-    background-color: var(--blackGray);
-    color: var(--yellow);
 }
 
 .link {
