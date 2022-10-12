@@ -17,9 +17,10 @@
 .info-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 40px;
     height: 550px;
-    background-color: white;
+    background-color: #ffeaa7c2;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 5px;
 }
@@ -27,6 +28,7 @@
 .info-container h3 {
     font-size: 40px;
     text-align: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 .aboutUs-title {
@@ -35,20 +37,36 @@
 
 .about-icon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    font-size: 80px;
-    gap: 20px;
-    height: 100vh;
 }
 
-.about-icon i {
-    display: grid;
-    place-content: center;
+.info-list {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    background-color: var(--blackGray);
+    color: white;
     padding: 10px;
+    border-radius: 10px;
+}
+
+.animated-world {
+    width: 150px;
+}
+
+.animated-vinyl {
+    width: 260px;
+}
+
+.animated-heart {
+    width: 125px;
 }
 
 .about-icon p {
     font-size: 15px;
 }
+

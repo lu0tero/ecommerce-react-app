@@ -1,4 +1,5 @@
 import './About.css'
+import vinyl from '../../images/vinyl.gif'
 
 const About = () => {
   return (
@@ -9,20 +10,17 @@ const About = () => {
             <div className='info-container'>
                 <h3>About <br /> <span className='aboutUs-title'> Modern Sound</span></h3>
 
+                <ul className='info-list'>
+                    <li>Best sound quality</li>
+                    <li>Products made with love</li>
+                    <li>Good music = happy heart</li>
+                </ul>
+
                 <div className='about-icon'>
-                    <div>
-                        <i className="fa-solid fa-headphones"></i>                      
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-
-                    <div>
-                        <i className="fa-solid fa-record-vinyl"></i>
-                        <p>Lorem ipsum dolor sit amet</p>
-                    </div>
-
-                    <div>
-                        <i className="fa-regular fa-face-smile"></i>
-                        <p>Lorem ipsum dolor sit amet</p>
+                    <div className='animated-container'>
+                        <img className='animated-world' src="https://cdn.discordapp.com/attachments/732453916658368552/1029552855478181938/1068-international-music-lineal.gif" alt="" />                     
+                        <img className='animated-vinyl' src={vinyl} alt="vinyl" />
+                        <img className='animated-heart' src="https://cdn.discordapp.com/attachments/732453916658368552/1029555051003383848/20-love-heart-lineal_1.gif" alt="heart" />
                     </div>
                 </div>
             </div>
