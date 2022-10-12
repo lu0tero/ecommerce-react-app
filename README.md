@@ -1,7 +1,49 @@
-En este proyecto de React se me ocurrió realizar un ecommerce de Vinilos ya que tenía ganas de hacerlo con algo relacionado al mundo de la música.
+## React ecommerce
 
-Mi idea es matener una página lo mas simple posible con una buena estetica y una lógica estable. No utilice librerías mas allá de las trabajadas en clase.
-Para realizar el CartWidget utilice FontAwesome ya que me parecía lo más comodo para trabajar en ese momento. 
-Mi página constara de una sección "Home" donde se dara una bienvenida al usuario con una breve presentación de diversos vinilos. Luego tendrá una sección llamada "vinilos" en la que se mostrarán todos los productos. También tendrá a futuro un DropDown donde se desplegará varios generos musicales para filtrar dichos productos. 
+Este proyecto es un ecommerce construido con React JS, utilizando como base de datos Firebase. Tiene también incluida la librería de SweetAlert 2.
 
-Por último tiene una sección de "Contacto" en el que se creara un formulario para rellenar y enviar. 
+## Vista Previa
+![](./src/images/gifPreview.gif.gif)
+
+## Instalación 
+
+Antes de iniciar el proyecto es necesario que esten instaladas las scripts de React y la librería de SweetAlert 2 para su correcto funcionamiento.
+
+```bash
+npm install react-scripts
+npm install sweetalert2
+```
+## Iniciación
+Para visualizar el proyecto es requerido escribir en la consola:
+```bash
+npm start
+```
+Asegúrese de estar parado sobre la raíz del proyecto.
+
+## Tecnologías
+* HTML
+* CSS
+* JavaScript
+* React JS
+* GIT
+* Firebase
+
+## Librerías
+* SweetAlert 2
+
+## Descripción
+Este ecommerce esta creado sobre la base de React JS para el curso de la carrera de Frontend en Coderhouse. Es mi primer trabajo utilizando esta tecnología.
+
+Utilice varios Hooks que nos brinda React JS, tales como los UseState para controlar los estados, UseEffect para montar los componentes y UseContext para pasar props de un componente a otro. También utilice para el routing React-router-dom para la Single Page Application, siendo así mas eficaz para el usuario moverse entre las secciones.
+
+El proyecto presenta un header con un Dropdown donde aparecerán los distintos tipos de vinilos separados por género, y un  footer decorativo. Tambien cuenta con un Cart, donde el usuario puede ver sus productos seleccionados y un form dentro del mismo para rellenarlo con sus datos.
+
+Todos los productos fueron creados mediante Firebase. También al finalizar la compra se generara un ID dinámico y se mostrara la misma en la base de datos de Firestore.
+
+## Contribución
+Cualquier tipo de sugerencia y cambio es bienvenido!
+
+## Licencia
+Lucas Otero
+
+Página construida con fines educativos. 

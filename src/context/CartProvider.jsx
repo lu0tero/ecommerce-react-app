@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
+    // Añadir al carrito
     const addToCart = (item, quantity) => {
         if (isInCart(item.title)) {
           Swal.fire({
@@ -32,24 +33,31 @@ const CartProvider = ({children}) => {
         console.log('cart', [...cart, {...item, quantity}])
     };
 
+
+    // Funcion para verificar si el producto ya se encuentra en el carrito
     const isInCart = (title) => {
       return cart.some((item) => item.title === title);
   };
 
+
+    // Limpiar carrito
     const clear = () => {
       setCart([]);
       console.log(cart);
     };
 
-    const removeItem = (itemId) => {
-      setCart(cart.filter((item) => item.id !== itemId));
+    // Eliminar item de forma individual
+    const removeItem = (itemTitle) => {
+      setCart(cart.filter((item) => item.title !== itemTitle));
       console.log(cart);
     }
 
+    // Sumar productos
     const sumQuantity = cart.reduce((acc, item) => {
       return acc += item.quantity;
     }, 0);
 
+    // Obtener precio total
     const getTotalPrice = cart.reduce((acc, item) => {
       return acc += parseInt(item.price) * item.quantity;
     }, 0);

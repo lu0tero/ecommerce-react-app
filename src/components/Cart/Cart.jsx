@@ -27,10 +27,6 @@ const Cart = () => {
         date: moment().format('DD/MM/YYYY')
     });
 
-    const clearCart = () => {
-        clear();
-      };
-
        
     const createOrder = () => {
         const db = getFirestore();
@@ -43,6 +39,8 @@ const Cart = () => {
                 title: 'Product purchased successfully',
               });
         })
+
+        
         .catch(() => Swal.fire({
             icon: 'error',
             title: 'Something went wrong',
@@ -50,7 +48,12 @@ const Cart = () => {
             position: 'top-end',
             showConfirmButton: false,
             timer: 1500
-          }));
+        }))
+        
+        .finally(setTimeout(() => {
+            clear()     
+        }, 2000));
+        
     };
 
     const handleInputChange = (e) => {
@@ -95,7 +98,7 @@ const Cart = () => {
         <section className="productAdd-container">
                 <div className="cart-info">
                     <h1 className='cart-welcome'>Here are your vinyls 📀</h1>
-                    <i className="fa-solid fa-trash icon" onClick={clearCart}></i>
+                    <i className="fa-solid fa-trash icon" onClick={clear}></i>
                 </div>
             <div className='itemCart-container'>
                 {
@@ -117,7 +120,7 @@ const Cart = () => {
                             <h5 className='vinyl-artist-cart'>{item.artist}</h5>
                             <span className='cart-quantity'>{item.quantity}</span>
                             <span className='vinyl-price-cart'>${item.price}</span>
-                            <button className='remove-btn' onClick={() => removeItem(item.id)}>Delete</button>
+                            <button className='remove-btn' onClick={() => removeItem(item.title)}>Delete</button>
                         </div>
                     ))
                 }
