@@ -30,6 +30,7 @@ Asegúrese de estar parado sobre la raíz del proyecto.
 
 ## Librerías
 * SweetAlert 2
+* Moment JS
 
 ## Descripción
 Este ecommerce esta creado sobre la base de React JS para el curso de la carrera de Frontend en Coderhouse. Es mi primer trabajo utilizando esta tecnología.
